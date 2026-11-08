@@ -170,8 +170,6 @@ export function uploadErrorText(code: string | null | undefined): string {
       return "This file is bigger than 2 GB, the most one upload can be.";
     case "bad_type":
       return "Only MP4, MOV, WebM and MKV videos can be uploaded.";
-    case "daily_limit":
-      return `You can upload ${UPLOADS_PER_DAY} videos a day. Try again tomorrow.`;
     case "not_configured":
       return "Uploads are not configured on this server yet.";
     case "size_mismatch":
